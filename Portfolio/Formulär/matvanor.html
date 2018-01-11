@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<title> Frågor om dina matvanor </title>
+
+
+
+<style>
+body {
+background-image:url("Mat2.jpg")
+}
+div.main {
+background-color:white;
+width:600px;
+opacity:0.9;
+margin-left:30px;
+padding:50px;
+border:Solid red 2px;
+}
+
+
+
+</style>
+</head>
+
+
+
+<body>
+<div class="main">
+	<h1>Dina matvanor</h1>
+	<form action="action_page.php" method="post">
+
+
+	<h3>Vilket alternativ stämmer för dig ?</h3>
+	<input list="matval">
+	<datalist id="matval">
+	<option value="Jag äter allt">
+	<option value="Jag äter bara kött">
+	<option value="Jag äter bara grönt">
+	</datalist>
+	
+	
+	
+	<h3>Vilken är din favoriträtt?</h3>
+	<input type="text" name="favortirätt" required> <br>
+
+
+		<h3> Hur ofta är du favoriten i vackan?</h3>
+		<input type="number" min="0" max="7">
+		
+		
+		<h3>Vad vill du äta som tilbehör?</h3>
+		<input type="checkbox" name="tillbehör"
+		value="pasta">Pasta <br>
+		<input type="checkbox" name="tillbehör"
+		value="ris">Ris <br>
+		<input type="checkbox" name="tillbehör"
+		value="potatis">Potatis <br>
+		
+		
+		<h3>Gillar du att äta Shawarma? </h3>
+		<input type="radio" name="Shawarma" value="JA">Ja, självklart <br>
+		<input type="radio" name="Shawarma" value="NEJ">Nej, Aldrig <br>
+		<input type="radio" name="Shawarma" value="VETEJ">Vet inte, Aldrig ätit det <br>
+		
+	
+	<h3> Vilken mat gillar du inte? </h3>
+	<h4> Brätta lite om varför du inte gillar det </h4>
+	<textarea name="Ogillar" style="width:300px;height:100px;"> 
+	</textarea>
+	<h3> Skicka dina svar till mig. Tack på förhand </h3>
+	<input type="submit" value="Skicka ditt svar" >
+</form>
+</div>
+</body> 
+</html> 
